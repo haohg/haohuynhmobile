@@ -1,0 +1,189 @@
+:root{
+    --color-primary: #e11b1e;
+    --color-second: #f85154;
+    --color-white: #fff;
+    --color-black: #515151;
+    --color-background-body: #f3f3f3;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background-body);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+/* Border Radius */
+.br-rd-2{
+    border-radius: 2px;;
+}
+
+.br-rd-4{
+    border-radius: 4px;;
+}
+
+.br-rd-10{
+    border-radius: 10px;;
+}
+
+/* Margin */
+.mr-y-10{
+    margin: 10px 0;
+}
+
+.mr-t-10{
+    margin-top: 10px
+}
+
+.mr-t-5{
+    margin-top: 5px;
+}
+
+.mr-b-10{
+    margin-bottom: 10px;
+}
+
+.mr-b-5{
+    margin-bottom: 5px;
+}
+
+/* Padding  */
+.pd-10{
+    padding: 10px
+}
+
+.pd-y-10{
+    padding: 10px 0;
+}
+
+.pd-t-10{
+    padding-top: 10px;
+}
+
+.pd-t-5{
+    padding-top: 5px;
+}
+
+.pd-b-10{
+    padding-bottom: 10px;
+}
+
+.pd-b-5{
+    padding-bottom: 5px;
+}
+
+.pd-b-12{
+    padding-bottom: 12px;
+}
+
+
+/* Text align */
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Flex align */
+.flex-align-center{
+    align-items: center;
+}
+
+/* transparent */
+.bg-transparent{
+    background: transparent;
+}
+
+/* Button */
+.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+/* Input Text */
+.input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+}
+
+/* Animation */
+/* Fade In */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0
+    }
+}
+
+
+/* Modal */
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal--active{
+    display: block;
+    animation: fadeIn 0.3s linear;
+}
+
+.modal-container{
+    position: relative;
+    background: #fff;
+    width: 70%;
+    height: 100vh;
+    animation: slideRight 0.3s linear;
+}
+
+
+
+.modal-close__button{
+    font-size: 3rem;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    padding: 2px 10px;
+    background-color: #fff;
+}
