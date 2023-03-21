@@ -1,0 +1,39 @@
+@use './base' as base;
+
+.header-mobile{
+    height: base.$height-header;
+    background-color: base.$primary-color;
+    box-shadow: 0 0 3px;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 10;
+}
+
+.mobile-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: base.$text-primary-color;
+
+    &__button{
+        color: inherit;
+    }
+}
+
+.mobile-search{
+    display: flex;
+    padding: 0px 15px 15px;
+    position: relative;
+    
+    &__input{
+        flex: 1;
+        padding: 11px 0 10px 10px;
+    }
+
+    &__button{
+        position: absolute;
+        right: 20px;
+        transform: translateY(6px);
+    }
+}

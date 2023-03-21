@@ -1,0 +1,105 @@
+@use 'sass:math';
+$width-col: math.div(100%, 12);
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row.no-gutter{
+        margin: 0;
+
+        [class|='col']{
+            padding: 0;
+        }
+    }
+}
+
+// For mobile
+@media screen and (min-width: 320px) {
+    [class|='col']{
+        padding: 0 4px;
+    }
+    .col-0{
+        display: none;
+    }
+
+    .col-1{
+        flex: 0 0 $width-col;
+        max-width: $width-col;
+    }
+
+    .col-2{
+        flex: 0 0 $width-col*2;
+        max-width: $width-col*2;
+    }
+
+    .col-3{
+        flex: 0 0 $width-col*3;
+        max-width: $width-col*3;
+    }
+
+    .col-4{
+        flex: 0 0 $width-col*4;
+        max-width: $width-col*4;
+    }
+
+    .col-5{
+        flex: 0 0 $width-col*5;
+        max-width: $width-col*5;
+    }
+
+    .col-6{
+        flex: 0 0 $width-col*6;
+        max-width: $width-col*6;
+    }
+
+    .col-7{
+        flex: 0 0 $width-col*7;
+        max-width: $width-col*7;
+    }
+
+    .col-8{
+        flex: 0 0 $width-col*8;
+        max-width: $width-col*8;
+    }
+
+    .col-9{
+        flex: 0 0 $width-col*9;
+        max-width: $width-col*9;
+    }
+
+    .col-10{
+        flex: 0 0 $width-col*10;
+        max-width: $width-col*10;
+    }
+
+    .col-11{
+        flex: 0 0 $width-col*11;
+        max-width: $width-col*11;
+    }
+
+    .col-12{
+        flex: 0 0 $width-col*12;
+        max-width: $width-col*12;
+    }
+}
+
+// For tablet
+@media screen and (min-width: 768px) {
+    
+}
+
+// For desktop
+@media screen and (min-width: 1024px) {
+    .col-3{
+        flex: 0 0 $width-col;
+    }
+    
+}

@@ -1,0 +1,63 @@
+$primary-color: #ff3131;
+$secondary-color: #ec9b4a;
+$text-primary-color: #fff;
+$text-secondary-color: #3a3a3a;
+$heading-color: #3a3a3a;
+$height-header: 100px;
+$border-radius: 4px;
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+button{
+    background-color: transparent;
+}
+
+button, input{
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: $border-radius;
+}
+
+.no-wrap{
+    flex-wrap: nowrap !important;
+}

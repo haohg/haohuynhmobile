@@ -1,0 +1,37 @@
+@use './base' as base;
+
+.slider{
+    &-wrap{
+        position: relative;
+    }
+
+    &-list{
+        display: flex;
+        overflow: hidden;
+        
+    }
+
+    &-item{
+        flex: 0 0 100%;
+
+        img{
+            vertical-align: middle;
+        }
+    }
+
+    &-dots{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+    &-dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: base.$text-primary-color;
+    }
+}
