@@ -1,5 +1,6 @@
 $primary-color: #ff3131;
 $secondary-color: #ec9b4a;
+$third-color: #e7e7e7;
 $text-primary-color: #fff;
 $text-secondary-color: #3a3a3a;
 $heading-color: #3a3a3a;
@@ -46,11 +47,34 @@ h3{
     font-size: 1.8rem;
 }
 
-button{
+.button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
     background-color: transparent;
+    border-radius: $border-radius;
+
+    &--full{
+        display: block;
+    }
+
+    &--primary-color{
+        background-color: $primary-color;
+        color: $text-primary-color
+    }
+
+    &--secondary-color{
+        background-color: $secondary-color;
+        color: $text-primary-color;
+    }
+
+    &--third-color{
+        background-color: $third-color;
+        color: $primary-color;
+    }
 }
 
-button, input{
+input{
     display: inline-block;
     border: none;
     outline: none;
@@ -60,4 +84,23 @@ button, input{
 
 .no-wrap{
     flex-wrap: nowrap !important;
+}
+
+// Section common style
+.section {
+    margin-top: 20px;
+
+    &-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border-left: solid 4px $primary-color;
+        text-transform: uppercase;
+    }
+
+    &--color{
+        background-color: $primary-color;
+        color: $text-primary-color;
+    }
 }

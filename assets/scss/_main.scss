@@ -4,20 +4,6 @@
     margin-top: base.$height-header + 10px;
 }
 
-// Section common style
-.section {
-    margin-top: 20px;
-
-    &-title {
-        padding-left: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        border-left: solid 4px base.$primary-color;
-        text-transform: uppercase;
-    }
-}
-
 .brand {
 
     &-item {
@@ -43,6 +29,7 @@
     }
     &-img{
         position: relative;
+        margin-bottom: 10px;
     }
 
     &-time{
@@ -101,7 +88,7 @@
 
 .section-post{
     display: flex;
-    overflow:scroll;
+    overflow-x: scroll;
     gap: 10px;
 }
 

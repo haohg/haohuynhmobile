@@ -115,11 +115,30 @@ h3 {
   font-size: 1.8rem;
 }
 
-button {
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
   background-color: transparent;
+  border-radius: 4px;
+}
+.button--full {
+  display: block;
+}
+.button--primary-color {
+  background-color: #ff3131;
+  color: #fff;
+}
+.button--secondary-color {
+  background-color: #ec9b4a;
+  color: #fff;
+}
+.button--third-color {
+  background-color: #e7e7e7;
+  color: #ff3131;
 }
 
-button, input {
+input {
   display: inline-block;
   border: none;
   outline: none;
@@ -129,6 +148,22 @@ button, input {
 
 .no-wrap {
   flex-wrap: nowrap !important;
+}
+
+.section {
+  margin-top: 20px;
+}
+.section-title {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-left: solid 4px #ff3131;
+  text-transform: uppercase;
+}
+.section--color {
+  background-color: #ff3131;
+  color: #fff;
 }
 
 .header-mobile {
@@ -166,20 +201,36 @@ button, input {
   transform: translateY(6px);
 }
 
-.main {
-  margin-top: 110px;
+.slider-wrap {
+  position: relative;
+}
+.slider-list {
+  display: flex;
+  overflow: hidden;
+}
+.slider-item {
+  flex: 0 0 100%;
+}
+.slider-item img {
+  vertical-align: middle;
+}
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
 }
 
-.section {
-  margin-top: 20px;
-}
-.section-title {
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  border-left: solid 4px #ff3131;
-  text-transform: uppercase;
+.main {
+  margin-top: 110px;
 }
 
 .brand-item a {
@@ -199,6 +250,7 @@ button, input {
 }
 .service-img {
   position: relative;
+  margin-bottom: 10px;
 }
 .service-time {
   display: flex;
@@ -244,7 +296,7 @@ button, input {
 
 .section-post {
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   gap: 10px;
 }
 
@@ -261,30 +313,25 @@ button, input {
   margin-top: 5px;
 }
 
-.slider-wrap {
-  position: relative;
+.footer {
+  font-size: 1.5rem;
 }
-.slider-list {
-  display: flex;
-  overflow: hidden;
+.footer .section {
+  padding: 10px;
 }
-.slider-item {
-  flex: 0 0 100%;
+.footer .section-title {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border: none;
 }
-.slider-item img {
-  vertical-align: middle;
+.footer-info p {
+  margin-top: 10px;
 }
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
+.footer-info .button {
+  margin-top: 10px;
+  padding: 7px 10px;
+  font-weight: 500;
 }
-.slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
+.footer-support {
+  row-gap: 10px;
 }/*# sourceMappingURL=index.css.map */
