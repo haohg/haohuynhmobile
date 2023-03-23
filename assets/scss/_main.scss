@@ -27,6 +27,7 @@
         border: solid 1px rgba($color: #000000, $alpha: 0.1);
         
     }
+
     &-img{
         position: relative;
         margin-bottom: 10px;
@@ -69,6 +70,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-align: center;
+            font-size: 1.5rem;
         }
     }
 
@@ -102,7 +104,8 @@
         border-radius: base.$border-radius base.$border-radius 0 0;    
     }
 
-    h3{
+    &__title{
+        font-size: 1.5rem;
         margin-top: 5px;    
     }
 }
